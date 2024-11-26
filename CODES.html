@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Profil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts pour Roboto et Caveat Brush -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Caveat+Brush&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome pour les icônes des réseaux sociaux -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+<body>
+    <style>
+        body{
+         background-color: #666;
+        }
+        
+        .tools-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        
+        .tools-icons img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .tools h2{
+          display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 50px;
+            height: 50px;
+        }
+        
+            .profile-section {
+              background-color: #f8f9fa;
+              padding: 20px;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              margin-bottom: 20px;
+            }
+        
+            .profile-header {
+              text-align: center;
+              margin-bottom: 20px;
+              font-weight: bold;
+              text-transform: uppercase;
+            }
+        
+            .profile-text {
+              text-align: justify;
+            }
+        
+            .profile-image {
+              max-width: 100%;
+              height: auto;
+              border-radius: 10px;
+            }
+        
+            /* Ligne horizontale décorative sous le titre */
+            .underline {
+              width: 50px;
+              height: 3px;
+              background-color: #000;
+              margin: 0 auto 20px auto;
+            }
+        
+        
+        
+        
+        
+        
+            body {
+              background-color: #cec0c0;
+              font-family: 'Roboto', sans-serif;
+            }
+        
+            /* Style pour le texte principal "Salut ! Je suis Ramata Mamadou Thioye" */
+            .header-text {
+              color: #D48837;
+              font-family: 'Roboto', sans-serif;
+              font-size: 36px;
+              font-weight: 700;
+            }
+        
+            /* Style pour les sous-titres et le texte complémentaire */
+            .subtext, .job-title {
+              color: #1D1D49;
+              font-family: 'Caveat Brush', cursive;
+              font-size: 24px;
+            }
+        
+            /* Style de l'image de profil */
+          
+            /* Style des icônes de réseaux sociaux */
+            .social-icons a {
+              color: #1D1D49;
+              font-size: 24px;
+              margin: 0 10px;
+            }
+        
+            /* Style du bouton de téléchargement de CV */
+            .btn-cv {
+              background-color: #f8f9fa;
+              border: 2px solid #D48837;
+              color: #D48837;
+              padding: 10px 20px;
+              font-size: 18px;
+              border-radius: 25px;
+              text-decoration: none;
+            }
+        
+            .btn-cv:hover {
+              background-color: #D48837;
+              color: white;
+            }
+        
+        
+        
+        
+        
+        
+        
+           
+            /* Style de la section */
+            .services-section {
+              padding: 50px 0;
+              text-align: center;
+            }
+        
+            .services-section h2 {
+              font-size: 36px;
+              font-weight: bold;
+            }
+        
+            .services-section p {
+              font-size: 16px;
+              color: #666;
+              margin-bottom: 40px;
+            }
+        
+            .service-card {
+              background-color: #fff;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              padding: 20px;
+              text-align: center;
+              transition: transform 0.3s;
+            }
+        
+            .service-card:hover {
+              transform: translateY(-10px);
+            }
+        
+            .service-icon {
+              font-size: 40px;
+              color: #1D1D49;
+              border: 3px solid #1D1D49;
+              border-radius: 50%;
+              padding: 20px;
+              margin-bottom: 20px;
+            }
+        
+            .service-title {
+              font-size: 20px;
+              font-weight: bold;
+              margin-bottom: 15px;
+            }
+        
+            .service-desc {
+              font-size: 14px;
+              color: #666;
+            }
+        
+        
+        
+            .progress-bar-custom {
+                background-color: #343a40;
+              }
+          
+              .circle {
+                width: 50px;
+                height: 50px;
+                background-color: #e9ecef;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                font-weight: bold;
+                font-size: 1.2rem;
+              }
+          
+              .exp-text {
+                text-align: center;
+                margin-top: 10px;
+              }
+          
+              .exp-container {
+                margin-top: 50px;
+              }
+          
+              .exp-item {
+                margin-bottom: 40px;
+              }
+        
+        
+        
+              /* Réinitialisation des marges et des espacements par défaut */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none; /* Supprime le soulignement des liens */
+            border: none; /* Supprime les bordures par défaut */
+            outline: none; /* Supprime le contour des éléments */
+            scroll-behavior: smooth; /* Ajoute un défilement fluide pour les liens d'ancrage */
+            font-family: "Poppins", sans-serif; /* Définit la police */
+        }
+        
+        /* Variables CSS */
+        :root {
+            --bg-color: #b9b2b2; /* Couleur de fond principale */
+            --second-bg-color: #fefefe; /* Couleur de fond secondaire (ajoutez une valeur ici) */
+            --text-color: #0d0d35; /* Couleur du texte (ajoutez une valeur ici) */
+        }
+        /* Définition de la taille de police par défaut */
+        html {
+            font-size: 40%; /* Définit la taille de police à 60% de la taille par défaut du navigateur */
+        }
+        
+        /* Empêche le débordement horizontal de la page */
+        body {
+            overflow-x: hidden; /* Cache tout débordement horizontal */
+            background: var(--second-bg-color); /* Applique la couleur de fond définie dans les variables CSS */
+            color: var(--text-color); /* Applique la couleur du texte définie dans les variables CSS */
+        }
+        
+        /* Styles pour l'en-tête */
+        header {
+            position: fixed; /* Rend l'en-tête fixe en haut de la page */
+            top: 0; /* Aligne l'en-tête en haut */
+            left: 0; /* Aligne l'en-tête à gauche */
+            width: 100%; /* Prend toute la largeur de la fenêtre */
+            padding: 4rem 12%; /* Ajoute du remplissage vertical de 4rem et horizontal de 12% */
+            background: rgba(0, 0, 0, 0.3); /* Couleur de fond noire avec transparence */
+            backdrop-filter: blur(10px); /* Applique un flou de 10 pixels à l'arrière-plan derrière l'en-tête */
+            display: flex; /* Utilise le modèle de boîte flex pour l'en-tête */
+            justify-content: space-between; /* Espacement égal entre les éléments enfants */
+            align-items: center; /* Centre les éléments enfants verticalement */
+            z-index: 5; /* Définit l'ordre d'empilement pour s'assurer que l'en-tête se superpose aux autres éléments */
+        }
+        /* Style pour le logo (si utilisé avec une classe spécifique) */
+        .logo span {
+            text-shadow: 0 0 25px var(--main-color); /* Ajoute une ombre au texte du logo */
+            --text-color: #0d0d35; /* Couleur du texte (ajoutez une valeur ici) */
+            
+        }
+        .logo{
+            font-size: 160%; 
+        }
+        
+        /* Styles pour la barre de navigation */
+        .navbar a {
+            font-size: 1.8rem; /* Définit la taille de police des liens dans la barre de navigation */
+            color: var(--text-color); /* Applique la couleur du texte définie dans les variables CSS */
+            margin-left: 4rem; /* Ajoute une marge à gauche des liens */
+            font-weight: 500; /* Définit le poids de la police (semi-gras) */
+            transition: 0.3s ease; /* Ajoute une transition douce lors du changement d'état */
+            border-bottom: 3px solid transparent; /* Ajoute une bordure inférieure invisible (pour l'effet de survol) */
+          }
+        
+        
+        
+          /* Styles pour les liens au survol et l'élément actif dans la barre de navigation */
+        .navbar a:hover,
+        .navbar a.active {
+            color: var(--main-color); /* Change la couleur du texte pour correspondre à la couleur principale */
+            border-bottom: 3px solid var(--main-color); /* Ajoute une bordure inférieure colorée */
+        }
+        
+        /* Styles pour l'icône du menu */
+        #menu-icon {
+            font-size: 3.6rem; /* Définit la taille de police de l'icône du menu */
+            color: var(--main-color); /* Applique la couleur principale à l'icône du menu */
+            display: none; /* Masque l'icône du menu par défaut */
+        
+          }
+        
+        
+        
+          .text-center{
+            margin-left: 50px;
+            font-size: 30px;
+          }
+          realisation-heading{
+        
+            margin-left: 50px;
+            font-size: 30px;
+            margin-top: 20px;
+          }
+          
+        
+          .container {
+            background-color: #FFFFFF;
+        
+            margin-top: 100px;
+          }
+          .profile-img{
+            height: 400px;
+            width: 400px;
+            margin-top: -10px;
+            margin-left: 40px;
+
+          }
+          .col-md-6{
+            margin-top: 20px;
+          }
+          .container {
+            background-color: #d4d8db;
+
+          }
+         .ser{
+            width: 1200px;
+            margin-left: 40px;
+           
+         }
+
+       
+    
+
+
+   
+              .card-title {
+                  font-weight: bold;
+                  font-size: 1.2rem;
+              }
+              .realisation-heading {
+                  text-align: center;
+                  margin-bottom: 20px;
+              }
+              .realisation-subtitle {
+                  text-align: center;
+                  margin-bottom: 40px;
+              }
+              .card img {
+                  height: 150px;
+                  object-fit: cover;
+              }
+              .card-footer {
+                  background-color: white;
+              }
+              .icon-add {
+                  font-size: 1.5rem;
+                  color: #007bff;
+                  text-align: center;
+              }
+
+
+              /* Styles pour le fond de la section */
+    .contact-section {
+      background-image: url('background.jpg'); /* Remplacez 'background.jpg' par l'URL de votre image de fond */
+      background-size: cover;
+      background-position: center;
+      padding: 60px 0;
+    }
+
+    /* Styles pour le conteneur principal de la section */
+    .contact-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styles pour les titres et sous-titres */
+    .contact-title {
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .contact-subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    /* Style pour la ligne de soulignement */
+    .underline {
+      width: 50px;
+      height: 3px;
+      background-color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    /* Bouton de soumission */
+    .btn-message {
+      background-color: #1a1a56;
+      color: white;
+      border-radius: 25px;
+      padding: 10px 20px;
+    }
+
+    /* Styles pour les icônes de réseaux sociaux */
+    .social-icons a {
+      color: #1a1a56;
+      font-size: 20px;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    /* Footer copyright */
+    .footer {
+      color: #666;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    <style>
+    /* Style pour la section */
+    .competences-section {
+      padding: 50px 0;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .competences-section h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .competences-section p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .underline {
+      width: 50px;
+      height: 3px;
+      background-color: #007bff;
+      margin: 0 auto 40px;
+    }
+
+    .skills-container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+    }
+
+    .skill-box {
+      background-color: #ffffff;
+      border: 1px solid #d9d9d9;
+      padding: 15px 20px;
+      border-radius: 20px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+      color: #000;
+      font-weight: bold;
+      text-align: center;
+      width: 90%;
+      position: relative;
+      margin: 10px 0;
+    }
+
+    /* Ligne verticale centrale */
+    .vertical-line {
+      width: 6px;
+      background-color: #D48837; /* Couleur orange de la ligne centrale */
+      height: 100%;
+      position: relative;
+      margin: 0 20px;
+    }
+
+    /* Lignes horizontales reliant la ligne centrale aux boîtes */
+    .horizontal-line {
+      width: 30px;
+      height: 4px;
+      background-color: #D48837;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .skill-box.left .horizontal-line {
+      left: -35px;
+    }
+
+    .skill-box.right .horizontal-line {
+      right: -35px;
+    }
+    /* Style pour la section */
+    .experiences-section {
+      padding: 50px 0;
+      text-align: center;
+      background-color: #f9f9f9;
+      height: 10px;
+    }
+
+    .experiences-section h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .experiences-section p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .underline {
+      width: 50px;
+      height: 3px;
+      background-color: #007bff;
+      margin: 0 auto 40px;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 700px; /* Largeur maximale pour le rectangle */
+      margin: 0 auto;
+      padding-left: 20px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50px;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background-color: #d9d9d9; /* Ligne verticale en gris */
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 20px 0;
+      margin-left: 70px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -45px;
+      top: 10px;
+      width: 20px;
+      height: 20px;
+      background-color: #d9d9d9; /* Cercle en gris */
+      border-radius: 50%;
+      border: 4px solid #f9f9f9;
+    }
+
+    .timeline-date {
+      font-weight: bold;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .timeline-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #1d1d49;
+      margin-top: 5px;
+    }
+
+    .timeline-description {
+      font-size: 14px;
+      color: #666;
+    }
+    .ji {
+         margin-left: 450px;
+         padding-top: 30px;
+    }
+    .ex{
+        padding-top: 30px;
+
+    }
+    .pro{
+        position: absolute;
+        margin-left: 150wh;
+       
+    }
+    
+
+
+
+/* Section de base */
+#A_PROPOS {
+  padding: 50px 15px; /* Espacement global */
+  background-color: #f9f9f9; /* Couleur de fond */
+  width: 960px;
+  margin-left: 160px;
+}
+
+/* Titre */
+#A_PROPOS h1 {
+  font-size: 24px; /* Taille du titre */
+  font-weight: bold;
+  color: #1D1D49; /* Couleur du texte */
+  text-align: center;
+  margin-bottom: 20px; /* Espacement sous le titre */
+  margin-left: 200px;
+  margin-top: 39px;
+}
+
+/* Image */
+#A_PROPOS .profile-img {
+  width: 100%; /* Image prend 100% de la largeur de son conteneur */
+  max-width: 300px; /* Limite la taille de l'image */
+  height: auto; /* Hauteur automatique pour garder les proportions */
+  object-fit: cover; /* Recadrage pour une image propre */
+  border-radius: 50%; /* Forme circulaire */
+  border: 3px solid #007bff; /* Bordure bleue */
+  display: block;
+  margin: 0 auto; /* Centre l'image */
+  margin-left: 100px;
+}
+
+/* Texte */
+#A_PROPOS .about-text {
+  font-size: 17px; /* Taille du texte */
+  line-height: 1.6; /* Espacement entre les lignes */
+  text-align: justify; /* Justification du texte */
+  color: #333; /* Couleur du texte */
+  margin-left: 150px;
+}
+
+/* Responsivité pour tablettes */
+@media (max-width: 768px) {
+  #A_PROPOS h1 {
+    font-size: 20px; /* Réduction de la taille du titre */
+  }
+
+  #A_PROPOS .profile-img {
+    max-width: 200px; /* Taille plus petite pour tablette */
+  }
+
+  #A_PROPOS .about-text {
+    font-size: 15px; /* Réduction de la taille du texte */
+    text-align: center; /* Texte centré sur tablette */
+  }
+}
+
+/* Responsivité pour mobiles */
+@media (max-width: 576px) {
+  #A_PROPOS {
+    padding: 30px 10px; /* Réduction de l'espacement global */
+  }
+
+  #A_PROPOS h1 {
+    font-size: 18px; /* Titre plus petit */
+  }
+
+  #A_PROPOS .profile-img {
+    max-width: 150px; /* Taille réduite pour mobile */
+  }
+
+  #A_PROPOS .about-text {
+    font-size: 14px; /* Texte encore plus petit */
+    text-align: center; /* Toujours centré sur mobile */
+  }
+}
+
+
+
+    <style>
+/* Assurez une réinitialisation globale */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Les images s'adaptent à leur conteneur */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Conteneur principal */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Responsivité pour mobiles (petits écrans) */
+@media (max-width: 576px) {
+  .profile-img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .header-text, .job-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .social-icons {
+    text-align: center;
+  }
+
+  .skills-container, .services-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .navbar a {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+/* Responsivité pour tablettes */
+@media (max-width: 768px) {
+  .profile-img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .header-text {
+    font-size: 28px;
+  }
+
+  .services-section .service-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsivité pour petits ordinateurs */
+@media (max-width: 992px) {
+  .profile-img {
+    width: 60%;
+  }
+
+  .header-text {
+    font-size: 32px;
+  }
+
+  .services-section .service-card {
+    margin-bottom: 15px;
+  }
+
+<style>
+/* Barres de progression */
+.progress {
+  height: 20px; /* Augmentez la hauteur selon vos besoins */
+  border-radius: 10px; /* Donne des coins arrondis pour un aspect moderne */
+  background-color: #e9ecef; /* Couleur de fond des barres */
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: #343a40; /* Couleur de la barre active */
+  font-size: 14px; /* Texte visible dans les barres */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Assure que la barre occupe toute la hauteur */
+}
+
+.progress-bar-custom {
+  background-color: #007bff; /* Couleur personnalisée */
+}
+
+h6 {
+  font-size: 18px; /* Taille du titre des compétences */
+  margin-bottom: 8px; /* Espacement entre le titre et la barre */
+}
+
+/* Responsivité pour petits écrans */
+@media (max-width: 576px) {
+  .progress {
+    height: 16px; /* Réduction légère sur mobile */
+  }
+
+  h6 {
+    font-size: 16px; /* Taille réduite des titres sur petits écrans */
+  }
+}
+.prof{
+     font-size: 16px;
+     margin-left: 300px;
+}
+.realisation-heading {
+font-size: 64px;
+}
+/* Style de base */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030; /* Toujours visible au-dessus du contenu */
+}
+
+/* Apparence du menu sur desktop */
+.navbar {
+  padding: 1rem 2rem;
+}
+
+.navbar .nav-link {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #f39c12; /* Couleur au survol */
+}
+
+/* Apparence du menu sur mobile */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem; /* Réduire la hauteur du menu */
+  }
+
+  .navbar-toggler {
+    font-size: 1.5rem; /* Taille réduite pour le bouton burger */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem; /* Taille réduite des liens */
+    margin-bottom: 0.5rem; /* Espacement entre les liens */
+  }
+}
+
+</style>
+
+
+
+          </style>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </head>
+        <body>
+        
+        
+        
+        
+            <header class="header">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">R.M.T</a>
+
+      <!-- Bouton burger (visible uniquement sur mobile) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu de navigation -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#ACCEUIL">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#A_PROPOS">À propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#serv">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#realisation">Réalisations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cont">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  
+
+  <!-- Script pour activer le menu burger -->
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+
+  <!-- Scripts Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        
+        
+        
+        
+          
+        
+          <div class="container text-center py-5">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <!-- Texte principal -->
+                <h1 class="header-text">Salut !<br>Je suis Ramata Mamadou Thioye</h1>
+                <p class="subtext">Référente digitale passionnée par le monde du digital et de la stratégie en ligne. Avec une formation solide, j'aide les entreprises à maximiser leur présence numérique et à atteindre leurs objectifs.</p>
+                <h2 class="job-title">RÉFÉRENTE DIGITALE</h2>
+        
+                <!-- Icônes des réseaux sociaux -->
+                <div class="social-icons mt-3">
+                  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+        
+                <!-- Bouton pour télécharger le CV -->
+                <div class="mt-4">
+                  <a href="https://drive.google.com/drive/folders/1f3oFwFUmamtP_eXX_wZtROx80HAwLsNK" class="btn btn-cv">Télécharger mon CV</a>
+                </div>
+              </div>
+        
+              <!-- Image de profil -->
+              <div class="col-md-4">
+                <img src="Ellipse 1.png" alt="Ramata Mamadou Thioye" class="profile-img">
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          
+
+          
+   
+  </style>
+</head>
+<body>
+    <section id="A_PROPOS" class="about-section py-5">
+  <div class="container text-center">
+    <H1  class=" PR">MON PROFIL</H1>
+    
+    <div class="row align-items-center">
+      <!-- Image -->
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <img src="Ellipse 1.png" alt="Mon image" class="profile-img img-fluid rounded-circle">
+      </div>
+      <!-- Texte -->
+      <div class="col-12 col-md-8">
+        <p class="about-text">
+          Bonjour, je suis <strong>Ramata Mamadou Thioye</strong>, <br>
+          une passionnée du digital spécialisée <br> 
+          
+    
+          en communication digitale <br> et en référencement numérique. <br>
+          Mon objectif est d'aider les entreprises à <br>
+           améliorer leur présence en ligne grâce à  <br>
+           des stratégies personnalisées et innovantes. <br>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+</body>
+</html>
+
+
+
+
+
+          
+        <section id="serv">
+          <!-- Bootstrap JS -->
+          <div class="container">
+           
+               
+            <section class="services-section">
+              <!-- Titre de la section -->
+              <h2 class="text-center">SERVICES</h2>
+              <p class="text-center">Nous offrons des solutions innovantes pour optimiser votre présence en ligne.</p>
+          
+              <!-- Grille des services -->
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <div class="service-card">
+                    <i class="fas fa-desktop service-icon"></i>
+                    <h3 class="service-title">MARKETING DIGITALE</h3>
+                    <p class="service-desc">Nous créons une stratégie digitale pour vous maximiser votre présence en ligne et atteindre vos objectifs de croissance.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <div class="service-card">
+                    <i class="fas fa-code service-icon"></i>
+                    <h3 class="service-title">WEB DEVELOPMENT</h3>
+                    <p class="service-desc">Je propose des services de développement web, allant de la conception de sites vitrines à la création de plateformes interactives.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <div class="service-card">
+                    <i class="fas fa-bullhorn service-icon"></i>
+                    <h3 class="service-title">COMMUNICATION</h3>
+                    <p class="service-desc">Je propose des services de stratégie de communication digitale, création de contenu, et analyse de performances pour renforcer la présence des marques sur le web.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <div class="service-card">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                    <h3 class="service-title">GRAPHIC DESIGN</h3>
+                    <p class="service-desc">Design de sites web, logos, affiches et autres visuels pour optimiser l'impact de votre image de marque.</p>
+                  </div>
+                </div>
+                <!-- Ajoutez autant de services que nécessaire en suivant cette structure -->
+              </div>
+            </section>
+        </section>
+          </div>
+          
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+              <div class="tras">
+                <div class="container mt-5">
+                  <!-- Compétences Transversales Section -->
+                  <h2 class="text-center mb-4"  >Compétences Transversales</h2>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h6>Travail en équipe</h6>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                          aria-valuemin="0" aria-valuemax="100">85%</div>
+                      </div>
+              
+                      <h6 class="mt-3">Autonomie</h6>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                          aria-valuemin="0" aria-valuemax="100">80%</div>
+                      </div>
+              
+                      <h6 class="mt-3">Gestion du temps</h6>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                          aria-valuemin="0" aria-valuemax="100">90%</div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <h6>Résolution de problèmes</h6>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                          aria-valuemin="0" aria-valuemax="100">75%</div>
+                      </div>
+              
+                      <h6 class="mt-3">Productivité</h6>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                          aria-valuemin="0" aria-valuemax="100">85%</div>
+                      </div>
+              
+                      <h6 class="mt-3">Créativité</h6>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100">70%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                  <section id="realisation">
+                
+                <div class="container">
+                    <!-- Titre Réalisations -->
+                    <div class="realisation-heading">
+                        <h2>RÉALISATIONS</h2>
+                    </div>
+                    <div class="realisation-subtitle">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <hr style="width: 50px; margin: 0 auto; border-top: 3px solid #007bff;">
+                    </div>
+            
+                    <!-- Cartes de réalisations -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- Carte 1 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="reseau - Copie.png" class="card-img-top" alt="Réseau des Alumni">
+                                <div class="card-body">
+                                    <h5 class="card-title">Projet resass</h5>
+                                    <p class="text-muted">Design / 18 Sep 2024</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="icon-add">+</div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Carte 2 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="plastcollect - Copie.png" class="card-img-top" alt="Projet PlastCollect">
+                                <div class="card-body">
+                                    <h5 class="card-title">PROJET PLASTCOLLECT</h5>
+                                    <p class="text-muted">Web master / 18 Sep 2024</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="icon-add">+</div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Carte 3 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="rmt - Copie.png" class="card-img-top" alt="branding personnel">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mavrito Lana Dere</h5>
+                                    <p class="text-muted">Web Design / 18 Sep 2018</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="icon-add">+</div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Carte 4 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="moringa glow - Copie.png" class="card-img-top" alt="projet communication digital">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bindo Laro Cado</h5>
+                                    <p class="text-muted">Web Design / 18 Sep 2018</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="icon-add">+</div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Carte 5 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="branding - Copie.png" class="card-img-top" alt="Campagne de Notoriété">
+                                <div class="card-body">
+                                    <h5 class="card-title">Campagne de Notoriété</h5>
+                                    <p class="text-muted">Gestion de Projets / 19 Sep 2024</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="icon-add">+</div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Carte 6 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="Capture d’écran (419) - Copie - Copie - Copie.png" class="card-img-top" alt="Création Portfolio Promo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Création Portfolio de la Promo</h5>
+                                    <p class="text-muted">Web Master / 18 Sep 2024</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="icon-add">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js
+            
+            </section>
+      
+
+
+
+
+               
+
+
+
+              
+                     
+
+        
+            <div class="container my-5">
+  <div class="exp-container">
+    <h2 class="text-center mb-4">Expériences</h2>
+    <div class="row">
+      <!-- Expérience 1 -->
+      <div class="col-md-4 exp-item">
+        <div class="circle">2024</div>
+        <div class="exp-text text-center">
+          <img src="path/to/image1.jpg" alt="Référent Digital" class="img-fluid mb-2 mx-auto d-block">
+          <h5>Référent Digital</h5>
+          <p>Accompagnement et gestion des stratégies de communication digitale.</p>
+        </div>
+      </div>
+
+      <!-- Expérience 2 -->
+      <div class="col-md-4 exp-item">
+        <div class="circle">2023</div>
+        <div class="exp-text text-center">
+          <img src="path/to/image2.jpg" alt="Stage en Immersion" class="img-fluid mb-2 mx-auto d-block">
+          <h5>Stage en Immersion</h5>
+          <p>Exploration approfondie des pratiques du marketing digital.</p>
+        </div>
+      </div>
+
+      <!-- Expérience 3 -->
+      <div class="col-md-4 exp-item">
+        <div class="circle">2020-2023</div>
+        <div class="exp-text text-center">
+          <img src="path/to/image3.jpg" alt="Licence en Informatique de Gestion" class="img-fluid mb-2 mx-auto d-block">
+          <h5>Licence en Informatique de Gestion</h5>
+          <p>Études spécialisées en développement web et gestion des systèmes d'information.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+<section id="dtg">
+
+
+
+<div class="container">
+    <div class="text-center my-5">
+        <div class="ex">
+      <h2>EXPÉRIENCES</h2>
+      <p>Découvrez mon parcours éducatif et mes expériences</p>
+    </div>
+    </div>
+
+    <div class="timeline">
+      <!-- Expérience 1 -->
+      <div class="timeline-item">
+        <div class="circle"></div>
+        <div class="timeline-content">
+          <h5  style="font-size: 34px;">Référent Digital</h5>
+          <small style="font-size: 24px;" >Mai 2024 - En cours</small>
+          <p   style="font-size: 24px;"  >Apprenante à Simplon Sénégal pour une formation de métier en référent digital.</p>
+        </div>
+      </div>
+
+      <!-- Expérience 2 -->
+      <div class="timeline-item">
+        <div class="circle"></div>
+        <div class="timeline-content">
+          <h5 style="font-size: 34px;" >Stagiaire en Immersion</h5>
+          <small style="font-size: 24px;" >Janvier - Février 2023</small>
+          <p style="font-size: 24px;" >Apprentissage et suivi pour mieux connaître le monde professionnel.</p>
+        </div>
+      </div>
+
+      <!-- Expérience 3 -->
+      <div class="timeline-item">
+        <div class="circle"></div>
+        <div class="timeline-content">
+          <h5 style="font-size: 34px;" >Licence en Informatique de Gestion</h5>
+          <small style="font-size: 24px;" >2022 - 2023</small>
+          <p style="font-size: 24px;" >Apprenante à Ensup Afrique de Dakar pour une formation en informatique.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+</section>
+
+
+<section id=" compETANCES">
+
+  <section class="competences-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">COMPÉTENCES</h2>
+    <p class="text-center">Découvrez mes compétences professionnelles et techniques.</p>
+    <div class="row">
+      <!-- Compétence 1 -->
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="skill-box">
+          <h4 class="skill-title">Plan de Communication</h4>
+        </div>
+      </div>
+      <!-- Compétence 2 -->
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="skill-box">
+          <h4 class="skill-title">Conception de Logo</h4>
+        </div>
+      </div>
+      <!-- Compétence 3 -->
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="skill-box">
+          <h4 class="skill-title">Création de Contenu</h4>
+        </div>
+      </div>
+      <!-- Compétence 4 -->
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="skill-box">
+          <h4 class="skill-title">Identité Visuelle</h4>
+        </div>
+      </div>
+      <!-- Compétence 5 -->
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="skill-box">
+          <h4 class="skill-title">Montage Vidéo</h4>
+        </div>
+      </div>
+      <!-- Ajoutez plus de compétences ici -->
+    </div>
+  </div>
+</section>
+</section>
+
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Section Contact</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+
+<section id="cont">
+  <!-- Section de contact -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10 contact-container">
+          <div class="row">
+            <!-- Formulaire de contact -->
+            <div class="col-md-6">
+              <h2 class="contact-title">Contact</h2>
+              <div class="underline"></div>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nom</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Mail</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-message">Message</button>
+              </form>
+            </div>
+
+            <!-- Informations de contact -->
+            <div class="col-md-6">
+              <h2 class="contact-title">Prendre contact</h2>
+              <div class="underline"></div>
+              <p><i class="bi bi-geo-alt-fill"></i> Dakar, Yeumbeul</p>
+              <p><i class="bi bi-telephone-fill"></i> 78 605 46 47</p>
+              <p><i class="bi bi-envelope-fill"></i> thioyeramata12@gmail.com</p>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer copyright -->
+      <div class="footer">
+        &copy; Copyright rmt. Tous droits réservés
+      </div>
+    </div>
+  </section>
+</section>
+
+  <!-- Bootstrap JS et icônes Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

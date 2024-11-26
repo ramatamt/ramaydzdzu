@@ -1,0 +1,238 @@
+body {
+      background-color: #cec0c0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* Style pour le texte principal "Salut ! Je suis Ramata Mamadou Thioye" */
+    .header-text {
+      color: #D48837;
+      font-family: 'Roboto', sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    /* Style pour les sous-titres et le texte complémentaire */
+    .subtext, .job-title {
+      color: #1D1D49;
+      font-family: 'Caveat Brush', cursive;
+      font-size: 24px;
+    }
+
+    /* Style de l'image de profil */
+  
+    /* Style des icônes de réseaux sociaux */
+    .social-icons a {
+      color: #1D1D49;
+      font-size: 24px;
+      margin: 0 10px;
+    }
+
+    /* Style du bouton de téléchargement de CV */
+    .btn-cv {
+      background-color: #f8f9fa;
+      border: 2px solid #D48837;
+      color: #D48837;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+
+    .btn-cv:hover {
+      background-color: #D48837;
+      color: white;
+    }
+
+
+
+
+
+
+
+   
+    /* Style de la section */
+    .services-section {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .services-section h2 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .services-section p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .service-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .service-icon {
+      font-size: 40px;
+      color: #1D1D49;
+      border: 3px solid #1D1D49;
+      border-radius: 50%;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .service-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .service-desc {
+      font-size: 14px;
+      color: #666;
+    }
+
+
+
+    .progress-bar-custom {
+        background-color: #343a40;
+      }
+  
+      .circle {
+        width: 100px;
+        height: 100px;
+        background-color: #e9ecef;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+  
+      .exp-text {
+        text-align: center;
+        margin-top: 10px;
+      }
+  
+      .exp-container {
+        margin-top: 50px;
+      }
+  
+      .exp-item {
+        margin-bottom: 40px;
+      }
+
+
+
+      /* Réinitialisation des marges et des espacements par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; /* Supprime le soulignement des liens */
+    border: none; /* Supprime les bordures par défaut */
+    outline: none; /* Supprime le contour des éléments */
+    scroll-behavior: smooth; /* Ajoute un défilement fluide pour les liens d'ancrage */
+    font-family: "Poppins", sans-serif; /* Définit la police */
+}
+
+/* Variables CSS */
+:root {
+    --bg-color: #b9b2b2; /* Couleur de fond principale */
+    --second-bg-color: #fefefe; /* Couleur de fond secondaire (ajoutez une valeur ici) */
+    --text-color: #0d0d35; /* Couleur du texte (ajoutez une valeur ici) */
+}
+/* Définition de la taille de police par défaut */
+html {
+    font-size: 40%; /* Définit la taille de police à 60% de la taille par défaut du navigateur */
+}
+
+/* Empêche le débordement horizontal de la page */
+body {
+    overflow-x: hidden; /* Cache tout débordement horizontal */
+    background: var(--second-bg-color); /* Applique la couleur de fond définie dans les variables CSS */
+    color: var(--text-color); /* Applique la couleur du texte définie dans les variables CSS */
+}
+
+/* Styles pour l'en-tête */
+header {
+    position: fixed; /* Rend l'en-tête fixe en haut de la page */
+    top: 0; /* Aligne l'en-tête en haut */
+    left: 0; /* Aligne l'en-tête à gauche */
+    width: 100%; /* Prend toute la largeur de la fenêtre */
+    padding: 4rem 12%; /* Ajoute du remplissage vertical de 4rem et horizontal de 12% */
+    background: rgba(0, 0, 0, 0.3); /* Couleur de fond noire avec transparence */
+    backdrop-filter: blur(10px); /* Applique un flou de 10 pixels à l'arrière-plan derrière l'en-tête */
+    display: flex; /* Utilise le modèle de boîte flex pour l'en-tête */
+    justify-content: space-between; /* Espacement égal entre les éléments enfants */
+    align-items: center; /* Centre les éléments enfants verticalement */
+    z-index: 5; /* Définit l'ordre d'empilement pour s'assurer que l'en-tête se superpose aux autres éléments */
+}
+/* Style pour le logo (si utilisé avec une classe spécifique) */
+.logo span {
+    text-shadow: 0 0 25px var(--main-color); /* Ajoute une ombre au texte du logo */
+    --text-color: #0d0d35; /* Couleur du texte (ajoutez une valeur ici) */
+    
+}
+.logo{
+    font-size: 160%; 
+}
+
+/* Styles pour la barre de navigation */
+.navbar a {
+    font-size: 1.8rem; /* Définit la taille de police des liens dans la barre de navigation */
+    color: var(--text-color); /* Applique la couleur du texte définie dans les variables CSS */
+    margin-left: 4rem; /* Ajoute une marge à gauche des liens */
+    font-weight: 500; /* Définit le poids de la police (semi-gras) */
+    transition: 0.3s ease; /* Ajoute une transition douce lors du changement d'état */
+    border-bottom: 3px solid transparent; /* Ajoute une bordure inférieure invisible (pour l'effet de survol) */
+  }
+
+
+
+  /* Styles pour les liens au survol et l'élément actif dans la barre de navigation */
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color); /* Change la couleur du texte pour correspondre à la couleur principale */
+    border-bottom: 3px solid var(--main-color); /* Ajoute une bordure inférieure colorée */
+}
+
+/* Styles pour l'icône du menu */
+#menu-icon {
+    font-size: 3.6rem; /* Définit la taille de police de l'icône du menu */
+    color: var(--main-color); /* Applique la couleur principale à l'icône du menu */
+    display: none; /* Masque l'icône du menu par défaut */
+
+  }
+
+
+
+  .text-center{
+    margin-left: 50px;
+    font-size: 30px;
+  }
+  realisation-heading{
+
+    margin-left: 50px;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  
+
+  .container {
+    background-color: #FFFFFF;
+
+    margin-top: 100px;
+  }
+ 
+  </style>
